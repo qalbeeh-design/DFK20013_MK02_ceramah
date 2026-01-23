@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ceramah Motivasi Berbayar</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>Ceramah Motivasi Kecermelangan Pelajar</h1>
+    </header>
+    <section class="landingPage">
+        <h2>Maklumat Penceramah</h2>
+
+        <div class="penceramah-box">
+            <img src="penceramah.jpg" alt="Lecturer Picture">
+
+            <div class="info">
+                <p><b>Penceramah:</b> Sabri Bin Saep</p>
+                <p><b>Sipnopsis:</b> Ceramah ini diadakan agar peserta tahu tips untuk berjaya akademik dan sahsiah.</p>
+                <p><b>Tarikh:</b>7 Mac 2026 (Sabtu)</p>
+                <p><b>Masa:</b>9.00 pagi - 5.00 petang</p>
+                <p><b>Lokasi:</b>Dewan Harumanis PTSS</p>
+                <p><b>Yuran:</b>RM65 seorang</p>
+                <p><b>Hubungi:</b>012-3456789 | ptssevent@gmail.com</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="borang">
+        <h2>Borang Tempahan</h2>
+
+        <form id="tempahanForm">
+            <label>Nama Penuh:</label>
+            <input type="text" id="nama" required>
+
+            <label>Alamat E-mel:</label>
+            <input type="email" id="email" required>
+
+            <label>Nombor Telefon:</label>
+            <input type="email" id="email" required>
+
+            <label>Kategori Peserta</label>
+            <select id="kategori" required>
+                <option value="">Pilihan</option>
+                <option>Pelajar</option>
+                <option>Pensyarah</option>
+                <option>Orang Awam</option>
+                <option>Koperasi</option>
+            </select>
+
+            <label>Bilangan Slot</label>
+            <input type="number" id="slot" min="1" required>
+
+            <label>Bukti Pembayaran</label>
+            <input type="receipt" required>
+
+            <div class="checkbox">
+                <input type="checkbox" id="akuan" required>
+                <span>Saya bersetuju dengan terma & syarat.</span>
+            </div>
+
+            <button type="submit">Hantar</button>
+        </form>
+    </section>
+
+    <section id="pengesahan" class="hidden">
+        <h2>Pengesahan Tempatan</h2>
+        <div id="output"></div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

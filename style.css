@@ -1,0 +1,77 @@
+body {
+    font-family: Arial, sans-serif;
+    background: #f2f2f2;
+    margin:0;
+}
+
+header {
+    background: #2c3e50;
+    color:white;
+    text-align: center;
+    padding: 20px;
+}
+
+section {
+    background: #f2f2f2;
+    margin: 20px;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.penceramah-box {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.penceramah-box img {
+    width: 180px;
+    border-radius: 10px;
+}
+
+.info p {
+    margin: 6px 0;
+}
+
+label {
+    display: block;
+    margin-top: 10px;
+}
+
+input, select, button {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+}
+
+.checkbox {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    text-align: left;
+    margin-top: 10px;
+}
+
+.checkbox input {
+    margin:auto;
+}
+
+.checkbox span {
+    white-space:nowrap;
+}
+
+button {
+    background: #27ae60;
+    color: #f2f2f2;
+    border: none;
+    margin-top:15px;
+    cursor: pointer;
+}
+
+.hidden {
+    display: none;
+}
+
+#output p {
+    margin: 6px 0;
+}
