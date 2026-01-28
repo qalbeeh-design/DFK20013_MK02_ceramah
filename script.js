@@ -1,7 +1,7 @@
 document.getElementById("tempahanForm").addEventListener("submit", function(e) {
     e.preventDefault();
 
-    let hargaSeunit = 65;
+    const hargaSeunit = 65;
 
     let nama = document.getElementById("nama").value;
     let email = document.getElementById("email").value;
@@ -12,14 +12,40 @@ document.getElementById("tempahanForm").addEventListener("submit", function(e) {
     let jumlahYuran = hargaSeunit * slot;
 
     let paparan = `
-        <p><b>Nama:</b> ${nama}</p>
-        <p><b>Email:</b> ${email}</p>
-        <p><b>Telefon:</b> ${telefon}</p>
-        <p><b>Kategori Peserta:</b> ${kategori}</p>
-        <p><b>Bilangan Slot:</b> ${slot}</p>
-        <p><b>Jumlah Yuran:</b> RM ${jumlahYuran}</p>
+        <table border="1" cellpadding="8" cellspacing="0" width="100%">
+            <tr>
+                <th colspan="2">Pengesahan Pendaftaran</th>
+            </tr>
+            <tr>
+                <td><b>Nama</b></td>
+                <td>${nama}</td>
+            </tr>
+            <tr>
+                <td><b>Email</b></td>
+                <td>${email}</td>
+            </tr>
+            <tr>
+                <td><b>Telefon</b></td>
+                <td>${telefon}</td>
+            </tr>
+            <tr>
+                <td><b>Kategori Peserta</b></td>
+                <td>${kategori}</td>
+            </tr>
+            <tr>
+                <td><b>Bilangan Slot</b></td>
+                <td>${slot}</td>
+            </tr>
+            <tr>
+                <td><b>Jumlah Yuran</b></td>
+                <td>RM ${jumlahYuran}</td>
+            </tr>
+        </table>
     `;
 
     document.getElementById("output").innerHTML = paparan;
     document.getElementById("pengesahan").classList.remove("hidden");
+
+    // SOROK BORANG
+    document.querySelector(".borang").style.display = "none";
 });
